@@ -1,7 +1,10 @@
 #include "catdog.h" 
+#include "dog.h"
+#include "cat.h"
+#include "animal.h"
 
 CatDog::CatDog(string firstName, double weight, string breed, string conduct, bool isService, string dominant)
-    : Dog(firstName, weight, breed, isService), Cat(firstName, weight, breed, conduct), _dominant(dominant) {}
+    : Animal(firstName, weight, breed), Dog(firstName, weight, breed, isService), Cat(firstName, weight, breed, conduct), _dominant(dominant) {}
 
 CatDog::CatDog() : CatDog("не определено", 0.0, "не определено", "не определено", false, "не определено") {}
 

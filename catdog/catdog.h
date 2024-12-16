@@ -1,7 +1,6 @@
 #pragma once
 #include <iostream>
 #include <string>
-#include "animal.h"
 #include "cat.h"
 #include "dog.h"
 using namespace std;
